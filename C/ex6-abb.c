@@ -10,20 +10,16 @@ int main(void)
    char *start;
    int file_count = 0;
 
- 
-    char *c="abcdef";
-
+    char *c="abcdasddef";
     char d[100];
-
+    char f[] = "abcdef";
     char e[]={'a','b','c','d','e','f'};
     
+    printf("%lu %lu\n",sizeof(c),strlen(c));    //8 10
+    printf("%lu %lu\n",sizeof(d),strlen(d));    //100 0 
+    printf("%lu %lu\n",sizeof(f),strlen(f));    //7 6
+    printf("%lu %lu\n",sizeof(e),strlen(e));    //6 12
 
-    printf("%lu %lu\n",sizeof(c),strlen(c));
-
-    printf("%lu %lu\n",sizeof(d),strlen(d));
-
-    printf("%lu %lu\n",sizeof(e),strlen(e));
-    
    start = strtok(input, delimenters);
    while(start != NULL)
    {
