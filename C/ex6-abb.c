@@ -15,7 +15,7 @@ int main(void)
     char f[] = "abcdef";
     char e[]={'a','b','c','d','e','f'};
     
-    printf("%lu %lu\n",sizeof(c),strlen(c));    //8 10
+    printf("%lu %lu\n",sizeof(c),strlen(c));    //8 10 10
     printf("%lu %lu\n",sizeof(d),strlen(d));    //100 0 
     printf("%lu %lu\n",sizeof(f),strlen(f));    //7 6
     printf("%lu %lu\n",sizeof(e),strlen(e));    //6 12
